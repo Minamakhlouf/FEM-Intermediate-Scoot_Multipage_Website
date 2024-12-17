@@ -43,10 +43,10 @@ export default function Locations() {
                     </div>
                 </div>
                 <div className={styles["city-name-flex"]}>
-                    <div className={styles.city}>New York</div>
-                    <div className={styles.city}>London</div>
-                    <div className={styles.city}>Jakarta</div>
-                    <div className={styles.city}>Yokohama</div>
+                    <div className={styles["city-name"]}>New York</div>
+                    <div className={styles["city-name"]}>London</div>
+                    <div className={styles["city-name"]}>Jakarta</div>
+                    <div className={styles["city-name"]}>Yokohama</div>
                 </div>
             </section>
             <section className={styles["not-there"]}>

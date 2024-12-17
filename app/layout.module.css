@@ -1,0 +1,155 @@
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 0; 
+    z-index: 150; 
+    background-color: white;
+    position: relative; 
+}
+
+.flex .btn-container {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute; 
+    top: -999px;
+    left: -999px; 
+}
+
+.advertisement {
+    background-color: #495567;
+    padding: 88px 32px; 
+    color: white; 
+    position: relative; 
+}
+
+.advertisement .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+    align-items: center;
+    background-color: transparent;
+}
+
+.advertisement h2 {
+    max-width: 311px; 
+    text-align: center;
+    letter-spacing: -1.43px;
+    font-size: 32px; 
+    line-height: 1; 
+}
+
+.advertisement .icons {
+    display: flex; 
+    gap: 13px; 
+}
+
+.advertisement .pattern {
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    transform: translatex(174px) translatey(6px)
+}
+
+.footer {
+    background-color: #333a44;
+    padding: 64px; 
+    display: flex;
+    justify-content: center;
+}
+
+.footer .link-container {
+    list-style: none;
+    margin-top: 42px; 
+    margin-bottom: 85px; 
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    text-align: center;
+}
+
+.footer .link-container a {
+    text-decoration: none;
+    color: white; 
+    font-size: 15px; 
+    line-height: 1.67; 
+    transition: color 0.2s ease-in; 
+    font-weight: bold; 
+}
+
+.footer .link-container a:hover {
+    color: #fcb72b; 
+}
+
+.footer .icon-container {
+    display: flex;
+    gap: 24px; 
+    align-items: center;
+}
+
+.svg-link {
+    transition: all 0.2s ease-in; 
+}
+
+.svg-link:hover .icon-path {
+    fill: #FFFFFF; 
+}
+
+@media screen and (min-width: 768px) {
+    .flex {
+        padding: 21px 40px; 
+        gap: 58px; 
+    }
+    .flex .btn-container {
+        visibility: visible;
+        pointer-events: all;
+        position: static; 
+        top: unset;
+        left: unset;  
+    }
+    .advertisement {
+        padding: 62px 32px; 
+    }
+    .advertisement h2 {
+        font-size: 48px; 
+        max-width: 457px; 
+    }
+    .footer {
+        padding: 35px 39px; 
+    }
+    .footer .container {
+        display: flex; 
+        gap: 58px; 
+        width: 100%; 
+    }
+    .footer .link-container {
+        margin-top: 0; 
+        margin-bottom: 0; 
+        flex-direction: row;
+        align-items: center;
+        margin-right: auto; 
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .flex {
+        margin: 0 auto; 
+        max-width: 1110px; 
+        padding: 21px 0; 
+    }
+    .advertisement .flex {
+        max-width: 1110px; 
+        margin: 0 auto; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .advertisement h2 {
+        text-align: left;
+        max-width: 415px; 
+        letter-spacing: -2.14px;
+    }
+    .footer .container {
+        max-width: 1110px; 
+        margin: 0 auto; 
+    }
+}

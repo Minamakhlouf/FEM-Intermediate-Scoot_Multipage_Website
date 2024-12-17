@@ -1,0 +1,36 @@
+.container {
+    visibility: hidden; 
+    pointer-events: none;
+    position: absolute; 
+    top: -999px; 
+    left: -999px; 
+    height: 0; 
+    width: 0; 
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        visibility: visible;
+        pointer-events: all;
+        position: static; 
+        height: unset; 
+        width: unset; 
+        display: flex;
+        list-style: none;
+        gap: 32px; 
+        margin-right: auto; 
+    }
+    
+    .container a {
+        text-decoration: none;
+        font-size: 15px; 
+        line-height: 1.66; 
+        color: #939caa; 
+        font-weight: bold; 
+    }
+    
+    .container a:hover, .container a.active {
+        color: #fcb72b; 
+    }
+}
+

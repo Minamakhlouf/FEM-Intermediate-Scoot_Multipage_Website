@@ -1,0 +1,68 @@
+.grid {
+    display: grid; 
+    grid-template-columns: 1fr;
+    gap: 24px; 
+}
+
+.img-container {
+    text-align: center;
+    background-color: white;
+}
+
+.img-container.overlap {
+    position: relative; 
+    z-index: 15; 
+}
+
+.image {
+    position: relative; 
+    width: 56px; 
+    aspect-ratio: 1;
+    z-index: 5; 
+    margin: 0 auto; 
+}
+
+.text {
+    display: flex; 
+    flex-direction: column;
+    gap: 24px; 
+    text-align: center;
+}
+
+.text h2 {
+    font-size: 20px; 
+    line-height: 1.4; 
+    letter-spacing: -0.89px;
+    color: #495567; 
+}
+
+.text p {
+    font-size: 15px; 
+    line-height: 1.67; 
+    color: #939caa; 
+}
+
+@media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: auto 1fr;
+        gap: 79px; 
+    }
+    .image {
+        width: 96px; 
+        margin: unset; 
+    }
+    .text {
+        text-align: left;
+    }
+    .text h2 {
+        font-size: 24px; 
+        line-height: 1.16; 
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 40px; 
+    }
+}

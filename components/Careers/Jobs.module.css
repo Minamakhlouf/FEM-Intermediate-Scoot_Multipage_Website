@@ -1,0 +1,62 @@
+.container {
+    background-color: #E5ECF4;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; 
+    margin: 0 32px; 
+    padding: 32px; 
+}
+
+.jobs-button {
+    width: 247px; 
+}
+
+.text-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; 
+    text-align: center;
+    color: #495567
+}
+
+.text-flex h3 {
+    font-size: 18px; 
+    line-height: 1.33; 
+    letter-spacing: -0.8;
+}
+
+.text-flex p {
+    font-size: 15px; 
+    line-height: 1.67; 
+
+}
+
+@media screen and (min-width: 768px) {
+    .jobs-button {
+        width: 180px; 
+    }
+    .container {
+        margin: 0 40px; 
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 34px 48px; 
+        align-items: center;
+    }
+    .text-flex {
+        text-align: left;
+    }
+    .text-flex h3 {
+        font-size: 24px; 
+        line-height: 1.16; 
+        letter-spacing: -1.07;
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .container {
+        max-width: 1110px; 
+        margin: 0 auto; 
+        width: 1110px; 
+    }
+}

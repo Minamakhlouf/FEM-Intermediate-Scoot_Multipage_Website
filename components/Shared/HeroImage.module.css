@@ -1,0 +1,61 @@
+.hero {
+    position: relative; 
+    display: flex; 
+    justify-content: center;
+    padding: 60px; 
+    margin-bottom: 72px; 
+}
+
+.hero h2 {
+    color: white; 
+    font-size: 40px; 
+    line-height: 1; 
+    letter-spacing: -1.79px;
+}
+
+.hero picture {
+    position: absolute; 
+    inset: 0 0 0 0; 
+    z-index: -5; 
+}
+
+.hero .circle-pattern {
+    display: absolute; 
+    width: 0; 
+    height: 0; 
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        justify-content: start;
+        padding: 72px 97px; 
+        margin-bottom: 144px; 
+    }
+    .hero h2 {
+        font-size: 56px; 
+        letter-spacing: -2.5px;
+        font-weight: bold;  
+    }
+    .hero .circle-pattern {
+        width: unset; 
+        height: unset; 
+        visibility: visible;
+        pointer-events: all;
+        right: 0; 
+        top: 50%; 
+        transform: translateY(-50%) translateX(31px); 
+        position: absolute; 
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .hero {
+        padding: 72px 0; 
+    }
+    .hero h2 {
+        width: 1110px; 
+        margin: 0 auto; 
+    }
+}

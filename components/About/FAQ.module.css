@@ -1,0 +1,64 @@
+.container {
+    color: #495567; 
+    background-color: #f2f5f9;
+    margin: 0 32px; 
+}
+
+.question-flex {
+    display: flex; 
+    justify-content: space-between;
+    width: 100%; 
+    border: none; 
+    gap: 16px; 
+    align-items: center;
+    padding: 32px; 
+    font-size: 18px; 
+    line-height: 1.33; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out; 
+}
+
+.question-flex:focus {
+    outline: 2px solid #fcb72b; /* Visible focus indicator */
+}
+
+.question-flex:hover {
+    background-color: #FFF4df;
+}
+
+.question-flex svg {
+    cursor: pointer; 
+    transform: rotate(180deg); 
+    transition: all 0.2s ease-in-out; 
+}
+
+.question-flex svg.active {
+    transform: rotate(0); 
+}
+
+.answer {
+    max-height: 0; 
+    overflow: hidden;
+    transition: all 0.2s ease-in-out; 
+    font-size: 15px; 
+    line-height: 1.67; 
+    padding-left: 32px; 
+}
+
+.answer.is-active {
+    max-height: unset;
+    padding: 0 32px 32px; 
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin: 0 40px; 
+    }
+}
+@media screen and (min-width: 1110px) {
+    .container {
+        margin: 0; 
+        max-width: 730px; 
+    }
+}

@@ -1,0 +1,245 @@
+.map {
+    margin-bottom: 72px; 
+}
+
+.shell {
+    margin: 0 32px; 
+}
+
+.map-container {
+    position: relative; 
+    width: 100%; 
+    aspect-ratio: 2.04;
+}
+
+.map-container picture {
+    position: absolute; 
+    inset: 0 0 0 0; 
+}
+
+.city {
+    position: relative; 
+    padding: 2px; 
+    width: 120px; 
+    background-color: #fcb72b;
+    display: flex; 
+    justify-content: center; 
+}
+
+.city::after {
+    content: ""; 
+    position: absolute; 
+    bottom: -10px; 
+    left: 50%; 
+    transform: translatex(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-top: 10px solid #fcb72b; 
+    z-index: 0; 
+}
+
+.city-1, .city-2, .city-3, .city-4 {
+    visibility: hidden;
+    pointer-events: none; 
+}
+
+.city-name-flex {
+    display: flex; 
+    flex-direction: column;
+    gap: 16px; 
+    margin: 40px 32px 0;  
+}
+
+.city-name-flex div {
+    background-color:  #FFF4DF;
+    font-size: 24px; 
+    line-height: 1.16; 
+    letter-spacing: -1.07px;
+    text-align: center;
+    padding: 22px; 
+    font-weight: bold; 
+}
+.not-there {
+    margin: 0 32px 72px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 32px; 
+    align-items: center;
+}
+
+.not-there h2 {
+    font-size: 32px; 
+    line-height: 1; 
+    letter-spacing: 1.43px;
+    color: #495567; 
+    text-align: center;
+    font-weight: bold; 
+}
+
+.not-there p {
+    font-size: 15px; 
+    line-height: 1.67; 
+    color: #939caa; 
+    max-width: 539px; 
+    margin: 0 auto; 
+    text-align: center; 
+}
+
+@media screen and (min-width: 768px) {
+    .map {
+        margin-bottom: 64px; 
+    }
+    .shell {
+        margin: 0 40px; 
+    }
+    .city-name-flex {
+        display: none; 
+    }
+    .city-1, .city-2, .city-3, .city-4 {
+        visibility: visible;
+        pointer-events: all; 
+    }
+    .city-1 {
+        position: absolute; 
+        top: 17%; 
+        left: 13%
+    }
+    
+    .city-2 {
+        position: absolute; 
+        top: 10%; 
+        left: 35%; 
+    }
+    
+    .city-3 {
+        position: absolute; 
+        right: 7%; 
+        top: 21%; 
+    }
+    
+    .city-4 {
+        position: absolute; 
+        top: 50%; 
+        right: 13%; 
+    }
+    .not-there {
+        gap: 40px; 
+    }
+    .not-there h2 {
+        font-size: 48px; 
+        letter-spacing: -2.14px;
+        max-width: 457px; 
+    }
+    .city {
+        font-size: 13px; 
+        line-height: 2.15; 
+        letter-spacing: -0.58px;
+    }
+}
+
+@media screen and (min-width: 848px) {
+    .city-1 {
+        top: 16%; 
+        left: 15%
+    }
+    
+    .city-2 {
+        top: 9%; 
+        left: 36%; 
+    }
+    
+    .city-3 {
+        right: 7%; 
+        top: 21%; 
+    }
+    
+    .city-4 {
+        top: 53%; 
+        right: 13%; 
+    }
+}
+
+@media screen and (min-width: 959px) {
+    .city-1 {
+        top: 16%; 
+        left: 16%
+    }
+    
+    .city-2 {
+        top: 9%; 
+        left: 38%; 
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    .city-1 {
+        top: 17%; 
+        left: 17%
+    }
+    .city-2 {
+        top: 11%; 
+        left: 38%; 
+    }
+    .city-3 {
+        right: 8%; 
+        top: 21%; 
+    }
+    .city-4 {
+        top: 54%; 
+        right: 15%; 
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .map-container {
+        max-width: 1110px; 
+        margin: 0 auto; 
+    }
+    .city-1 {
+        position: absolute; 
+        top: 18%; 
+        left: 18%
+    }
+    
+    .city-2 {
+        position: absolute; 
+        top: 12%; 
+        left: 39%; 
+    }
+    
+    .city-3 {
+        position: absolute; 
+        right: 10%; 
+        top: 25%; 
+    }
+    
+    .city-4 {
+        position: absolute; 
+        top: 55%; 
+        right: 16%; 
+    }
+    .not-there {
+        max-width: 1110px; 
+        margin: 0 auto 120px; 
+        flex-direction: row;
+        gap: 30px; 
+        align-items: center;
+    }
+    .not-there h2 {
+        text-align: left;
+        max-width: 351px; 
+    }
+    .not-there p {
+        text-align: left;
+        max-width: 445px; 
+        margin-right: auto; 
+        margin-left: 0; 
+    }
+    .city {
+        font-size: 24px; 
+        line-height: 1.16; 
+        letter-spacing: -1.07px;
+    }
+}

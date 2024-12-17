@@ -1,0 +1,111 @@
+.position-1 {
+    position: absolute; 
+    left: 32px; 
+    bottom: 0; 
+}
+
+.line-1 {
+    position: absolute; 
+    bottom: 131px; 
+    right: 0; 
+    width: 0; 
+    transform: translatey(50%);
+}
+
+.position-2 { 
+    position: absolute; 
+    top: 0; 
+    right: 113px; 
+}
+
+.line-2 {
+    top: 0; 
+    left: 0; 
+    transform: translatey(-35%) translatex(-100%); 
+}
+
+.position-3 {
+    position: absolute; 
+    top: 0; 
+    left: 50%; 
+}
+
+.line-3 {
+    position: absolute; 
+    top: 0; 
+    right: 0;
+    transform: translatex(100%)
+}
+
+.position-4 {
+    position: absolute; 
+    bottom: 40px; 
+    left: 32px; 
+}
+
+.line-4 {
+    position: absolute; 
+    bottom: 40px;  
+    right: 0; 
+    transform: translatex(50%);
+}
+
+.position-5 {
+    position: absolute; 
+    top: 0; 
+    right: 32px; 
+}
+
+.line-5 {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    transform: translatex(-75%)
+}
+
+@media screen and (min-width: 768px) {
+    .line-1 {
+        width: 500px;
+        transform: translatex(20%) translatey(50%); 
+    }
+    .position-2 {
+        right: 50%; 
+    }
+    .position-3 {
+        top: unset; 
+        bottom: 50%; 
+    }
+    .position-4 {
+        left: 40px; 
+    }
+    .line-4 {
+        transform: translateX(20%)
+    }
+    .position-5 {
+        right: 50%; 
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .line-1 {
+        width: 400px; 
+    }
+    .position-2 {
+        right: 350px;
+    }
+    .position-3 {
+        left: 335px; 
+    }
+    .position-4 {
+        left: 0; 
+    }
+    .line-4 {
+        transform: translatex(20%)
+    }
+    .position-5 {
+        right: 335px; 
+    }
+    .line-5 {
+        transform: translatex(-100%)
+    }
+}

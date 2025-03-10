@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "./MobileLinks.module.css"
 import Portal from "./Portal";
 import Button from "../Shared/Button";
+import Link from "next/link";
 
 export default function MobileLinks() {
     const [linksShown, setLinksShown] = useState(false); 
@@ -24,9 +25,9 @@ export default function MobileLinks() {
                 <div className={`${styles.modal} ${linksShown ? styles.active : ""}`}>
                     <div className={`${styles["link-container"]} ${linksShown ? styles.active : ""}`}>
                         <ul>
-                            <li>About</li>
-                            <li>Location</li>
-                            <li>Careers</li>
+                            <Link href="/about">About</Link>
+                            <Link href="/locations">Location</Link>
+                            <Link href="/careers">Careers</Link>
                         </ul>
                         <div onClick={mobileLinksHandler}>
                             <Button href="#download" message="Get Scootin" className={styles.btn}/> 

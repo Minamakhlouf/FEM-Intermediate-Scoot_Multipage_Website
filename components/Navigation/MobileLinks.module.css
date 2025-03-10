@@ -53,6 +53,12 @@
     font-weight: bold; 
 }
 
+.link-container ul a {
+    text-decoration: none;
+    color: #e5ecf4; 
+    font-size: 18px; 
+}
+
 .btn {
     width: 192px; 
 }
